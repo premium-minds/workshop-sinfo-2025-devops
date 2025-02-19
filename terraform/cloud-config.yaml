@@ -1,0 +1,9 @@
+#cloud-config
+users:
+  - default
+  - name: sinfo
+    sudo: ALL=(ALL) NOPASSWD:ALL 
+    shell: /bin/bash
+    groups: sudo
+    ssh_authorized_keys:
+      - ssh-
